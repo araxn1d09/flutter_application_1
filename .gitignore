@@ -1,43 +1,57 @@
-.DS_Store
-Thumbs.db
-ehthumbs.db
-Icon
-*.swp
-*.swo
-*~
+# Игнорировать ВСЕ папки кроме lib и test
+/*
+!/lib/
+!/test/
 
-.vscode/
-.idea/
+# Но сохранить нужные файлы в корне
+!pubspec.yaml
+!pubspec.lock
+!README.md
+!analysis_options.yaml
+!.gitignore
+!.metadata
+
+# Игнорировать все остальные файлы в корне
+/*.*
+!*.yaml
+!*.lock
+!*.md
+!*.gitignore
+!.metadata
+
+# Игнорировать специфичные папки Flutter
+/android/
+/ios/
+/linux/
+/macos/
+/windows/
+/web/
+/build/
+/dart_tool/
+/idea/
+
+# Игнорировать временные файлы и зависимости
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter/
+.fvm/
+
+# Игнорировать сгенерированные файлы
 *.iml
 *.ipr
 *.iws
+.idea/
+.vscode/
 
-.packages
-.pub-cache/
-.pub/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pubspec.lock
-.dart_tool/
-
-/build/
-
-coverage/
-*.lcov
-
-*.7z
+# Игнорировать файлы сборки
+*.apk
+*.ipa
 *.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+*.exe
 
-
-/ios
-/linux
-/macos
-/web
-/windows
-/android
+# Игнорировать логи и кэш
+*.log
+*.swp
+*.swo
+*~
