@@ -1,0 +1,34 @@
+# Игнорировать ВСЕ по умолчанию
+*
+
+# ИСКЛЮЧЕНИЯ - что нужно сохранить в Git:
+
+# Разрешить папки
+!/lib/
+!/test/
+!/images/
+
+# Разрешить файлы в корне
+!/pubspec.yaml
+!/pubspec.lock
+!/README.md
+!/analysis_options.yaml
+!/.gitignore
+!/.metadata
+
+# Разрешить содержимое разрешенных папок
+!/lib/**
+!/test/**
+!/images/**
+
+# Явно запретить ненужные папки (на всякий случай)
+/android/
+/ios/
+/linux/
+/macos/
+/windows/
+/web/
+/build/
+/dart_tool/
+/.idea/
+/.vscode/
